@@ -22,12 +22,12 @@ export default function ContactBanner() {
             For over a century, we’ve been committed to academic excellence,
             innovation, and student success.
           </p>
-          <Link
+          {/* <Link
             href="/contact"
             className="inline-block bg-secondary-500 hover:bg-pink-400 text-white px-5 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium transition duration-300"
           >
             Get in Touch
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

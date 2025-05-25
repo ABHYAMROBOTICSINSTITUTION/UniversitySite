@@ -23,7 +23,7 @@ function HomeBanner() {
       title: "Explore New Features",
       description: "Join us in this exciting journey of transformation",
       cta: "Get Started",
-      link: "/features",
+      link: "/about-us",
     },
     {
       src: "/image3.jpg",
@@ -107,22 +107,6 @@ function HomeBanner() {
                 </div>
               </div>
 
-              {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                  ></path>
-                </svg>
-              </div> */}
             </div>
           </SwiperSlide>
         ))}

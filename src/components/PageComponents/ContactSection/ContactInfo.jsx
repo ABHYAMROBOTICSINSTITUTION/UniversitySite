@@ -9,9 +9,9 @@ export default function ContactInfo() {
         <div>
           <h3 className="text-lg font-semibold mb-2">Address</h3>
           <p className="text-gray-100">
-            Sikkim Skill University<br />
-            Namthang, Namthang Bazaar, South Sikkim,<br />
-            Sikkim - 737137, India
+            University Name<br/>
+            Address<br/>
+            Nepal
           </p>
         </div>
       </div>
@@ -21,8 +21,8 @@ export default function ContactInfo() {
         <div>
           <h3 className="text-lg font-semibold mb-2">Phone Number</h3>
           <p className="text-gray-100">
-            +91-9289456781<br />
-            +91-9289456782
+            +977 9887265322<br />
+            +977 9887265322
           </p>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function ContactInfo() {
         <FaEnvelope className="text-secondary-500 text-xl mt-1" />
         <div>
           <h3 className="text-lg font-semibold mb-2">E-mail Address</h3>
-          <p className="text-gray-100">info@ssu.ac.in</p>
+          <p className="text-gray-100">university@gmail.com</p>
         </div>
       </div>
       

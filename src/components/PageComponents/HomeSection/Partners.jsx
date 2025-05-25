@@ -45,7 +45,7 @@ const Partners = () => {
                       alt={partner.alt}
                       width={180}
                       height={90}
-                      className="object-contain h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain h-16 w-32 transition-all duration-300"
                     />
                   </div>
                 </div>
