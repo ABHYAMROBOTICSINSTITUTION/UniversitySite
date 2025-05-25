@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary-500: #213F9B;
+  --color-secondary-500: #E642A7;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.hover:pause-animation:hover {
+  animation-play-state: paused;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.5);
+  opacity: 1;
+  margin: 0 8px !important;
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #3b82f6, #ec4899);
+  width: 30px;
+  border-radius: 6px;
+}
+
+.title {
+  @apply capitalize md:text-4xl text-3xl font-bold text-center text-primary-500;
+}
+
+.description {
+  @apply text-lg text-gray-600 ;
 }
