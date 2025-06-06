@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
-  FaPhone,
+  FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
 
@@ -15,8 +15,10 @@ const footerLinks = [
     title: "Quick Links",
     links: [
       { name: "Courses", href: "/courses" },
+      { name: "Blogs", href: "/blog" },
       { name: "Gallery", href: "/gallery" },
       { name: "Career", href: "/career" },
+      { name: "Research", href: "/research" },
       { name: "Contact", href: "/contact" },
     ],
   },
@@ -27,6 +29,8 @@ const footerLinks = [
       { name: "Vice Chancellor Message", href: "/vice-chancellor-message" },
       { name: "Registrar Message", href: "/registrar-message" },
       { name: "Alumni", href: "/alumni" },
+      { name: "About School", href: "/about-school" },
+      { name: "About College", href: "/about-college" },
 
     ],
   },
@@ -47,7 +51,7 @@ const footerLinks = [
         text: "123 University Ave, City",
       },
       {
-        icon: <FaPhone className="inline-block mr-2 mt-1 text-primary-300" />,
+        icon: <FaPhoneAlt className="inline-block mr-2 mt-1 text-primary-300" />,
         text: "(123) 456-7890",
       },
       {

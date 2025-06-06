@@ -31,7 +31,7 @@ const testimonials = [
 
 export default function AboutUsTestimonial() {
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
 
       <div className="relative z-10 w-11/12 mx-auto">
         <div className="text-center mb-10">

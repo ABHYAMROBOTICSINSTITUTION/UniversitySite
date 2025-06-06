@@ -12,6 +12,8 @@ const menuItems = [
       { name: "Vice Chancellor Message", link: "/vice-chancellor-message" },
       { name: "Registrar Message", link: "/registrar-message" },
       { name: "Alumni", link: "/alumni" },
+      { name: "About School", link: "/about-school" },
+      { name: "About College", link: "/about-college" },
     ]
   },
   {
@@ -59,7 +61,7 @@ const menuItems = [
   {
     title: "Admission",
     submenu: [
-      { name: "Admission Form", link: "/admission-form" },
+      { name: "Admission Info", link: "/admission-info" },
       { name: "Online Admission Application", link: "/admission-application" },
       { name: "List Of Documents", link: "/list-of-documents" },
     ],

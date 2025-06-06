@@ -13,7 +13,7 @@ const Partners = () => {
   ];
 
   return (
-    <div className="py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden">  
+    <div className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">  
       <div className="w-11/12 mx-auto relative z-10">
         <div className="text-center mb-10">
           <h2 className="title mb-4">

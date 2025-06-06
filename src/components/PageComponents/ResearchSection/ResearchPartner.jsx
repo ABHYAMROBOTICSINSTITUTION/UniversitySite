@@ -11,7 +11,7 @@ const partners = [
 
 export default function ResearchPartner() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b to-white from-gray-100">
+    <section className="py-16 md:py-24 bg-gradient-to-b to-white from-gray-50">
       <div className="w-11/12 mx-auto text-center">
         <div className="mb-10">
           <h2 className="title mb-4">

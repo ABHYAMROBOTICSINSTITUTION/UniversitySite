@@ -55,7 +55,7 @@ const alumniData = [
   ];
 function AlumniProfile() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="w-11/12 mx-auto">
       <div className="text-center mb-10">
           <h2 className="title mb-4">Meet Our Esteemed Alumni</h2>

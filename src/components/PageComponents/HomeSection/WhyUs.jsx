@@ -34,7 +34,7 @@ const points = [
 
 function WhyUs() {
   return (
-    <section className="relative w-full py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white">
+    <section className="relative w-full py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="relative z-10 w-11/12 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">

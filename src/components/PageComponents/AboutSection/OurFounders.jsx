@@ -24,7 +24,7 @@ const founders = [
 
 export default function OurFounders() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="w-11/12 mx-auto text-center">
         <h2 className="title mb-4">Our Founders</h2>
         <p className="text-lg text-gray-600  mb-10 max-w-2xl mx-auto">

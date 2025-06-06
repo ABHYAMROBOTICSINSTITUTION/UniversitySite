@@ -64,7 +64,7 @@ const Faq = () => {
   };
 
   return (
-    <section className=" py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white overflow-hidden">
+    <section className=" py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="mx-auto w-11/12">
         <div className="text-center mb-12">
           <h2 className="title mb-4">

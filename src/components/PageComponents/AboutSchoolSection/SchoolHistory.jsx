@@ -6,28 +6,18 @@ import { FaMedal, FaUsers, FaLightbulb, FaHandshake, FaGlobe } from "react-icons
 
 const values = [
   {
-    text: "Excellence in Education",
-    icon: <FaMedal className="text-secondary-500 text-xl" />
+    text: "Over 100 years of educational excellence",
   },
   {
-    text: "Inclusive & Diverse Community",
-    icon: <FaUsers className="text-secondary-500 text-xl" />
+    text: "50+ academic programs across 8 schools",
   },
   {
-    text: "Innovation & Research Focus",
-    icon: <FaLightbulb className="text-secondary-500 text-xl" />
+    text: "Recognized as a top-tier research institution",
   },
-  {
-    text: "Ethical & Responsible Practices",
-    icon: <FaHandshake className="text-secondary-500 text-xl" />
-  },
-  {
-    text: "Global Perspective with Local Impact",
-    icon: <FaGlobe className="text-secondary-500 text-xl" />
-  },
+
 ];
 
-function WhoWeAre() {
+function SchoolHistory() {
   return (
     <section className="relative w-full py-16 md:py-24 ">
       <div className="relative z-10 w-11/12 mx-auto">
@@ -35,21 +25,26 @@ function WhoWeAre() {
           <div className="w-full lg:w-1/2 space-y-8 order-1 lg:order-1">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-500">
-                Who We Are
+              Our Rich History
               </h2>
               <p className="description max-w-3xl mx-auto">
-                We are an institution built on a foundation of passion for knowledge, cultural inclusivity, and a vision to empower students globally through transformative education.
+              Founded in 1920, our university has grown from a small college to
+              a nationally recognized institution with over 20,000 students.
+              </p> <br />
+              <p className="description max-w-3xl mx-auto">
+              Through decades of change, we've maintained our commitment to
+              academic rigor, community engagement, and student success.
               </p>
             </div>
 
             <ul className="space-y-4">
               {values.map((value, idx) => (
                 <li key={idx} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-1">
-                    {value.icon}
+                  <div className="flex-shrink-0 mt-1 text-secondary-500">
+                  ✓
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">{value.text}</h3>
+                    <h3 className="text-lg font-semibold text-gray-600">{value.text}</h3>
                   </div>
                 </li>
               ))}
@@ -76,4 +71,4 @@ function WhoWeAre() {
   );
 }
 
-export default WhoWeAre;
+export default SchoolHistory;

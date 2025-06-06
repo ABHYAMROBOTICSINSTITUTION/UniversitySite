@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.className} flex flex-col`}>
-        <ClientLayout>{children}</ClientLayout>
+        <div suppressHydrationWarning>
+          <ClientLayout>{children}</ClientLayout>
+        </div>
       </body>
     </html>
   );

@@ -48,7 +48,7 @@ const staggerContainer = {
 
 function Events() {
   return (
-    <section className="w-full py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white">
+    <section className="w-full py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="w-11/12 mx-auto">
         <motion.div 
           initial="hidden"

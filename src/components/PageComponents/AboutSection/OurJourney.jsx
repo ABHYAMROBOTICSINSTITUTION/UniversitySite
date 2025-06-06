@@ -2,7 +2,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 function Journey() {
@@ -34,7 +33,7 @@ function Journey() {
   ];
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-100 to-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
             <div className="relative z-10 w-11/12 mx-auto">
         <div className="text-center mb-10">
           <h2 className="title mb-4">
@@ -48,15 +47,7 @@ function Journey() {
         <div className="relative">          
           <div className="space-y-16 md:space-y-24">
             {data.map((event, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true, margin: "-100px" }}
-                className="relative"
-              >
-                
+    
                 <div className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-8 md:gap-16`}>
                   <div className="w-full md:w-1/2 relative group">
                     <div className="overflow-hidden rounded-xl shadow-lg">
@@ -78,7 +69,7 @@ function Journey() {
                     <p className="text-gray-700">{event.description}</p>
                   </div>
                 </div>
-              </motion.div>
+         
             ))}
           </div>
         </div>
