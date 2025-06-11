@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function PreUniversityBanner() {
   return (
-    <section className="relative h-[700px] mt-28 w-full overflow-hidden">
+    <section className="relative h-[700px] w-full overflow-hidden">
       <Image
         src="/image2.jpg"
         alt="PreUniversity Banner"

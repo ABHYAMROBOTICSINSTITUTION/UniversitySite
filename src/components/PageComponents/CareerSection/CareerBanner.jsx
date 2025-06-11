@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CareerBanner() {
   return (
-    <section className="relative h-[700px] mt-28 w-full overflow-hidden">
+    <section className="relative h-[700px] w-full overflow-hidden">
       <Image
         src="/image3.jpg"
         alt="Career Us Banner"

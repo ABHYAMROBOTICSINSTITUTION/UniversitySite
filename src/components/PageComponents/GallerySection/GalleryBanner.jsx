@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function GalleryBanner() {
   return (
-    <section className="relative h-[700px] mt-28 w-full overflow-hidden">
+    <section className="relative h-[700px] w-full overflow-hidden">
       <Image
         src="/image1.jpg"
         alt="Gallery Banner"

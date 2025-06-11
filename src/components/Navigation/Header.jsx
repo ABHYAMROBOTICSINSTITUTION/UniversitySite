@@ -14,7 +14,7 @@ const menuItems = [
       { name: "Alumni", link: "/alumni" },
       { name: "About School", link: "/about-school" },
       { name: "About College", link: "/about-college" },
-    ]
+    ],
   },
   {
     title: "Programmes",
@@ -27,8 +27,10 @@ const menuItems = [
         name: "School of Commerce & Business Management",
         link: "/commerce-&-business-management",
       },
-      { name: "School of Research and Development", 
-      link: "/research-and-development" },
+      {
+        name: "School of Research and Development",
+        link: "/research-and-development",
+      },
       {
         name: "School of Pure & Applied Sciences",
         link: "/pure-&-applied-sciences",
@@ -38,23 +40,23 @@ const menuItems = [
         name: "School of Pharmacy",
         link: "/pharmacy",
       },
-      { name: "School of Yoga", 
-      link: "/yoga" },
+      { name: "School of Yoga", link: "/yoga" },
       {
         name: "School of Life Sciences",
         link: "/life-sciences",
       },
       { name: "School of Special Education", link: "/vocational-studies" },
-    { name: "School of Law", link: "/law" },
-
+      { name: "School of Law", link: "/law" },
     ],
   },
 
-  { title: "Courses",
-  submenu: [
-    { name: "Available Courses", link: "/courses" },
-    { name: "Academics", link: "/academics" }
-  ], },
+  {
+    title: "Courses",
+    submenu: [
+      { name: "Available Courses", link: "/courses" },
+      { name: "Academics", link: "/academics" },
+    ],
+  },
   { title: "Blogs", link: "/blog" },
 
   { title: "Research", link: "/research" },
@@ -71,7 +73,6 @@ const menuItems = [
   { title: "Career", link: "/career" },
   { title: "Contact Us", link: "/contact" },
 ];
-
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,7 +108,7 @@ function Header() {
   return (
     <header className="bg-white shadow-sm relative z-50">
       <div className="w-11/12 mx-auto flex items-center justify-between py-2">
-        <Link href="/">
+        <Link href="/" className="flex items-center space-x-2">
           <img src="/mainLogo.png" alt="LOGO" className="h-14 w-14" />
         </Link>
 
@@ -130,7 +131,7 @@ function Header() {
                       <li key={subIdx}>
                         <Link
                           href={subItem.link}
-                          className="block px-6 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#0a2d52]"
+                          className="block px-6 py-2 text-gray-800 hover:bg-gray-100 rounded-lg hover:text-[#0a2d52]"
                         >
                           {subItem.name}
                         </Link>
@@ -164,7 +165,10 @@ function Header() {
           >
             <ul className="space-y-2 p-4">
               {menuItems.map((item, idx) => (
-                <li key={idx} className="border-b border-gray-100 last:border-0">
+                <li
+                  key={idx}
+                  className="border-b border-gray-100 last:border-0"
+                >
                   {item.submenu ? (
                     <div>
                       <button
