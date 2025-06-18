@@ -108,8 +108,9 @@ function Header() {
   return (
     <header className="bg-white shadow-sm relative z-50">
       <div className="w-11/12 mx-auto flex items-center justify-between py-2">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-6">
           <img src="/mainLogo.png" alt="LOGO" className="h-14 w-14" />
+          <img src="/logo2.jpeg" alt="LOGO" className="h-14 w-14" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-800">

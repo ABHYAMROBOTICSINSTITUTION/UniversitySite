@@ -31,12 +31,6 @@ function SubHeader() {
               </button>
             </Link>
             
-            {/* <Link href="/apply-now">
-              <button className="flex gap-2 bg-secondary-500 hover:bg-pink-400 text-white px-4 py-2 rounded-full font-medium transition duration-300">
-                <FaSatelliteDish size={12} />
-                <span className="text-xs">Apply</span>
-              </button>
-            </Link> */}
           </div>
         </div>
 
