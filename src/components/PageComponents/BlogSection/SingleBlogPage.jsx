@@ -3,7 +3,14 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeft, FaShareAlt, FaBookmark, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaShareAlt,
+  FaBookmark,
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+} from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { RiUser3Line } from "react-icons/ri";
 
@@ -11,7 +18,8 @@ const blogs = [
   {
     id: 1,
     title: "Top 10 Universities for International Students in 2025",
-    excerpt: "Looking to study abroad? Check out these top universities known for welcoming international students and offering great opportunities.",
+    excerpt:
+      "Looking to study abroad? Check out these top universities known for welcoming international students and offering great opportunities.",
     date: "May 10, 2025",
     author: "Education Abroad",
     imageUrl: "/image1.jpg",
@@ -20,31 +28,30 @@ const blogs = [
     content: [
       {
         type: "paragraph",
-        text: "Choosing the right university as an international student can be challenging. This comprehensive guide highlights the top 10 universities that offer exceptional support, resources, and opportunities for students from abroad."
+        text: "Choosing the right university as an international student can be challenging. This comprehensive guide highlights the top 10 universities that offer exceptional support, resources, and opportunities for students from abroad.",
       },
       {
         type: "heading",
-        text: "1. Harvard University"
+        text: "1. Harvard University",
       },
       {
         type: "paragraph",
-        text: "Harvard continues to lead with its extensive international student services, including dedicated advisors, cultural organizations, and generous financial aid packages for overseas students."
+        text: "Harvard continues to lead with its extensive international student services, including dedicated advisors, cultural organizations, and generous financial aid packages for overseas students.",
       },
       {
         type: "image",
-        alt: "Harvard University campus"
+        alt: "Harvard University campus",
       },
       {
         type: "heading",
-        text: "2. University of Oxford"
+        text: "2. University of Oxford",
       },
       {
         type: "paragraph",
-        text: "Oxford's collegiate system provides a close-knit community for international students, with each college offering its own support services and social activities."
-      }
+        text: "Oxford's collegiate system provides a close-knit community for international students, with each college offering its own support services and social activities.",
+      },
     ],
-
-  }
+  },
 ];
 
 export default function SingleBlogPage() {
@@ -69,8 +76,8 @@ export default function SingleBlogPage() {
           className=" overflow-hidden"
         >
           <div className=" pt-6">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="inline-flex border border-primary-500 rounded-md px-3 py-1 items-center text-primary-500 hover:bg-primary-500 hover:text-white transition-colors"
             >
               <FaArrowLeft className="mr-2" />
@@ -89,7 +96,7 @@ export default function SingleBlogPage() {
               </div>
               <div className="flex items-center text-gray-500 text-sm">
                 <IoMdTime className="mr-1" />
-                {blog.date} 
+                {blog.date}
               </div>
             </div>
 
@@ -113,7 +120,7 @@ export default function SingleBlogPage() {
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 {blog.excerpt}
               </p>
-              
+
               {blog.content.map((section, index) => (
                 <div key={index} className="mb-6">
                   {section.type === "heading" && (
@@ -130,46 +137,46 @@ export default function SingleBlogPage() {
               ))}
             </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-200">
-  <h3 className="text-lg font-medium mb-4">Share this article</h3>
-  <div className="flex gap-4">
-    <Link
-      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-        typeof window !== "undefined" ? window.location.href : ""
-      )}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-    >
-      <FaFacebook />
-    </Link>
+            {/* <div className="mt-12 pt-8 border-t border-gray-200">
+              <h3 className="text-lg font-medium mb-4">Share this article</h3>
+              <div className="flex gap-4">
+                <Link
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                    typeof window !== "undefined" ? window.location.href : ""
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                >
+                  <FaFacebook />
+                </Link>
 
-    <Link
-      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-        typeof window !== "undefined" ? window.location.href : ""
-      )}&text=${encodeURIComponent(blog.title)}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition"
-    >
-      <FaTwitter />
-    </Link>
+                <Link
+                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                    typeof window !== "undefined" ? window.location.href : ""
+                  )}&text=${encodeURIComponent(blog.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition"
+                >
+                  <FaTwitter />
+                </Link>
 
-    <Link
-      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-        typeof window !== "undefined" ? window.location.href : ""
-      )}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition"
-    >
-      <FaLinkedin />
-    </Link>
-  </div>
-</div>
+                <Link
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                    typeof window !== "undefined" ? window.location.href : ""
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition"
+                >
+                  <FaLinkedin />
+                </Link>
+              </div>
+            </div> */}
+            
           </div>
         </motion.div>
-
       </div>
     </section>
   );
